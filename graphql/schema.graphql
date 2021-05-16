@@ -1,0 +1,6 @@
+type Query {
+    name: String!
+}
+
+# 1) Query는 정보 받을 때만 쓰임
+# 2) Mutation(변형): 정보를 바꿀 때
