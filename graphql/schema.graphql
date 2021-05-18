@@ -1,5 +1,13 @@
-type Query {
+type Person {
+    id: Int!
     name: String!
+    age: Int!
+    gender: String!
+}
+
+type Query {
+    people: [Person]!
+    person(id: Int!): Person!
 }
 
 # 1) Query는 정보 받을 때만 쓰임
