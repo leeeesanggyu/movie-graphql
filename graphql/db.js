@@ -32,7 +32,7 @@ export const deleteById = id => {
     const cleanedMovies = movies.filter(movie => movie.id !== id)
     if (movies.length > cleanedMovies.length) {
         movies = cleanedMovies
-        return true // 왜 boolean을 리턴해?
+        return true
     } else {
         return false
     }
