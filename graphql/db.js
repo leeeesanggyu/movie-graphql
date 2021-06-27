@@ -16,7 +16,7 @@ export let movies = [
     },
     {
         id: 4,
-        name: '하트시그널2',
+        name: '하트시그널',
         score: 1000,
     },
 ]
