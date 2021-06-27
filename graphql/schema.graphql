@@ -1,17 +1,16 @@
 type Movie {
     id: Int!
-    name: String!
-    score: Int!
+    title: String!
+    rating: Float!
+    summary: String!
+    language: String!
+    midium_cover_image: String!
 }
 
 type Query {
-    movies: [Movie]!
-    movie(id: Int!): Movie
+    movies(limit: Int, rating: Float): [Movie]!
 }
 
-type Mutation {
-    addMovie(name: String!, score: Int!): Movie!
-    deleteMovie(id: Int!): Boolean!
-}
+
 # 1) Query는 정보 받을 때만 쓰임
 # 2) Mutation(변형): 정보를 바꿀 때
